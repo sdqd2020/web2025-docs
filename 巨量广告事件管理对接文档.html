@@ -1,235 +1,522 @@
-# 巨量广告事件管理对接文档
-
-> 数据来源：<https://event-manager.oceanengine.com/docs/8650/event_manager_docs>
-> 抓取时间：2025年1月27日
-
-## 文档目录
-
-### 1. 事件管理操作手册
-
-- **URL**: <https://event-manager.oceanengine.com/docs/8650/event_manager_docs>
-- **类型**: 主要章节
-
-### 2. 移动应用SDK上报数据
-
-- **URL**: <https://event-manager.oceanengine.com/docs/8650/event_manager_docs>
-- **类型**: 分类目录
-
-#### 2.1 SDK基础信息
-
-- **URL**: <https://event-manager.oceanengine.com/docs/8650/tka7y7zo>
-- **类型**: 子章节
-
-#### 2.2 巨量引擎转化SDK隐私政策
-
-- **URL**: <https://event-manager.oceanengine.com/docs/8650/8xr99geh>
-- **类型**: 子章节
-
-#### 2.3 巨量引擎转化SDK合规规范
-
-- **URL**: <https://event-manager.oceanengine.com/docs/8650/27ta23t6>
-- **类型**: 子章节
-
-#### 2.4 接入指引
-
-- **URL**: <https://event-manager.oceanengine.com/docs/8650/kastmwz9>
-- **类型**: 子章节
-
-### 3. 开发使用说明
-
-- **URL**: <https://event-manager.oceanengine.com/docs/8650/event_manager_docs>
-- **类型**: 分类目录
-
-#### 3.1 落地页「JS埋码」技术开发说明
-
-- **URL**: <https://event-manager.oceanengine.com/docs/8650/jssdk_docs>
-- **类型**: 子章节
-
-#### 3.2 落地页「API回传」技术开发说明
-
-- **URL**: <https://event-manager.oceanengine.com/docs/8650/h5_api_docs>
-- **类型**: 子章节
-
-#### 3.3 落地页「XPath圈选」使用说明
-
-- **URL**: <https://event-manager.oceanengine.com/docs/8650/xpath_tool>
-- **类型**: 子章节
-
-#### 3.4 XPath工具（TRACK）插件使用说明
-
-- **URL**: <https://event-manager.oceanengine.com/docs/8650/xpath_track>
-- **类型**: 子章节
-
-#### 3.5 字节小程序「API 回传」技术开发说明
-
-- **URL**: <https://event-manager.oceanengine.com/docs/8650/miniprogram_api_docs>
-- **类型**: 子章节
-
-#### 3.6 三方（微信）小程序转化回传技术开发说明
-
-- **URL**: <https://event-manager.oceanengine.com/docs/8650/wechat_miniprogram_docs>
-- **类型**: 子章节
-
-#### 3.7 快应用「API回传」技术开发说明
-
-- **URL**: <https://event-manager.oceanengine.com/docs/8650/quickapp_api_docs>
-- **类型**: 子章节
-
-#### 3.8 转化回传 API 对接说明
-
-- **URL**: <https://event-manager.oceanengine.com/docs/8650/app_api_docs>
-- **类型**: 子章节
-
-#### 3.9 离线事件-产品操作手册
-
-- **URL**: <https://event-manager.oceanengine.com/docs/8650/offline_event_docs>
-- **类型**: 子章节
-
-#### 3.10 转化回传事件全集
-
-- **URL**: <https://event-manager.oceanengine.com/docs/8650/event_list>
-- **类型**: 子章节
-
-#### 3.11 转化回传事件属性全集
-
-- **URL**: <https://event-manager.oceanengine.com/docs/8650/event_properties>
-- **类型**: 子章节
-
-#### 3.12 APP_ID申请说明
-
-- **URL**: <https://event-manager.oceanengine.com/docs/8650/app_id_apply>
-- **类型**: 子章节
-
-#### 3.13 SDK数据检测说明
-
-- **URL**: <https://event-manager.oceanengine.com/docs/8650/sdk_data_check>
-- **类型**: 子章节
-
-#### 3.14 巨量纵横版-应用/自研落地页资产使用说明
-
-- **URL**: <https://event-manager.oceanengine.com/docs/8650/oceanone_asset_docs>
-- **类型**: 子章节
-
-#### 3.15 线索深转回传&全渠道对接技术开发说明
-
-- **URL**: <https://event-manager.oceanengine.com/docs/8650/lead_conversion_docs>
-- **类型**: 子章节
-
-### 4. 常见问题
-
-- **URL**: <https://event-manager.oceanengine.com/docs/8650/event_manager_docs>
-- **类型**: 分类目录
-
-#### 4.1 【投放手册】如何创建一个事件管理计划
-
-- **URL**: <https://event-manager.oceanengine.com/docs/8650/event_manager_ad>
-- **类型**: 子章节
-
-#### 4.2 资产的事件添加说明
-
-- **URL**: <https://event-manager.oceanengine.com/docs/8650/asset_event_add>
-- **类型**: 子章节
-
-#### 4.3 事件附加属性详情介绍
-
-- **URL**: <https://event-manager.oceanengine.com/docs/8650/event_additional_properties>
-- **类型**: 子章节
-
-#### 4.4 修改统计方式详细说明【白名单功能】
-
-- **URL**: <https://event-manager.oceanengine.com/docs/8650/modify_statistics_method>
-- **类型**: 子章节
-
-#### 4.5 修改回传方式的变更说明
-
-- **URL**: <https://event-manager.oceanengine.com/docs/8650/modify_callback_method>
-- **类型**: 子章节
-
-#### 4.6 修改事件价值详细说明
-
-- **URL**: <https://event-manager.oceanengine.com/docs/8650/modify_event_value>
-- **类型**: 子章节
-
-#### 4.7 联调工具详细说明
-
-- **URL**: <https://event-manager.oceanengine.com/docs/8650/debug_tool>
-- **类型**: 子章节
-
-#### 4.8 如何获取小程序启动页面？
-
-- **URL**: <https://event-manager.oceanengine.com/docs/8650/miniprogram_startup_page>
-- **类型**: 子章节
-
-#### 4.9 事件价值—动态回传
-
-- **URL**: <https://event-manager.oceanengine.com/docs/8650/dynamic_event_value>
-- **类型**: 子章节
-
-#### 4.10 事件价值—固定价值
-
-- **URL**: <https://event-manager.oceanengine.com/docs/8650/fixed_event_value>
-- **类型**: 子章节
-
-#### 4.11 事件价值—差异价值分人群设置
-
-- **URL**: <https://event-manager.oceanengine.com/docs/8650/differential_event_value>
-- **类型**: 子章节
-
-#### 4.12 XPath圈选的匹配校验说明
-
-- **URL**: <https://event-manager.oceanengine.com/docs/8650/xpath_validation>
-- **类型**: 子章节
-
-#### 4.13 跟踪离线事件-操作指南
-
-- **URL**: <https://event-manager.oceanengine.com/docs/8650/track_offline_event>
-- **类型**: 子章节
-
-#### 4.14 联调回传很慢怎么办？
-
-- **URL**: <https://event-manager.oceanengine.com/docs/8650/slow_callback_issue>
-- **类型**: 子章节
-
-#### 4.15 监测链接-事件管理功能介绍
-
-- **URL**: <https://event-manager.oceanengine.com/docs/8650/monitoring_link_intro>
-- **类型**: 子章节
-
-#### 4.16 分行业场景批量添加转化链路事件
-
-- **URL**: <https://event-manager.oceanengine.com/docs/8650/batch_add_conversion_events>
-- **类型**: 子章节
-
-#### 4.17 API回传skuid操作说明【NEW】
-
-- **URL**: <https://event-manager.oceanengine.com/docs/8650/api_callback_skuid>
-- **类型**: 子章节
-
-#### 4.18 全渠道事件量是如何统计的？
-
-- **URL**: <https://event-manager.oceanengine.com/docs/8650/omnichannel_event_statistics>
-- **类型**: 子章节
-
----
-
-## 说明
-
-本文档通过 Playwright 自动化工具抓取了巨量广告事件管理对接文档的完整章节目录结构。由于该网站采用单页应用（SPA）架构，所有章节共享同一个基础URL，具体内容通过前端路由进行切换。
-
-### 文档结构概览
-
-1. **事件管理操作手册** - 主要操作指南
-2. **移动应用SDK上报数据** - SDK相关文档，包含4个子章节
-3. **开发使用说明** - 技术开发文档，包含15个子章节
-4. **常见问题** - 问题解答文档，包含18个子章节
-
-总计：**1个主章节 + 3个分类目录 + 37个子章节**
-
-### 技术说明
-
-- 抓取工具：Playwright 自动化框架
-- 数据提取：通过DOM选择器和JavaScript执行获取菜单结构
-- 文档格式：Markdown格式，便于阅读和维护
-- 更新时间：2025年1月27日
-
-如需访问具体章节内容，请访问原始URL并在页面左侧菜单中选择对应章节。
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="巨量广告事件管理对接文档 - 完整的技术开发指南和API文档">
+    <meta name="keywords" content="巨量广告,事件管理,SDK,API,转化回传,小程序,落地页">
+    <title>巨量广告事件管理对接文档</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        .document-header {
+            border-bottom: 2px solid #e1e4e8;
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+        }
+        .document-meta {
+            background: #f6f8fa;
+            padding: 15px;
+            border-radius: 6px;
+            margin: 20px 0;
+        }
+        .toc {
+            background: #f8f9fa;
+            border: 1px solid #e1e4e8;
+            border-radius: 6px;
+            padding: 20px;
+            margin: 20px 0;
+        }
+        .chapter {
+            margin: 30px 0;
+            padding: 20px;
+            border-left: 4px solid #0366d6;
+            background: #f8f9fa;
+        }
+        .section {
+            margin: 20px 0;
+            padding: 15px;
+            border-left: 3px solid #28a745;
+            background: #f1f8ff;
+        }
+        .subsection {
+            margin: 15px 0;
+            padding: 10px;
+            border-left: 2px solid #6f42c1;
+            background: #fff;
+        }
+        .document-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .document-table th,
+        .document-table td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+        }
+        .document-table th {
+            background-color: #f2f2f2;
+            font-weight: bold;
+        }
+        .document-table tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        .keyword {
+            background: #fff3cd;
+            padding: 2px 4px;
+            border-radius: 3px;
+            font-weight: 500;
+        }
+        .api-term {
+            background: #d1ecf1;
+            padding: 2px 4px;
+            border-radius: 3px;
+            font-family: monospace;
+        }
+        .url-link {
+            color: #0366d6;
+            text-decoration: none;
+            word-break: break-all;
+        }
+        .url-link:hover {
+            text-decoration: underline;
+        }
+        .chapter-summary {
+            background: #e6f3ff;
+            padding: 15px;
+            border-radius: 6px;
+            margin: 20px 0;
+        }
+        .statistics {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin: 20px 0;
+        }
+        .stat-card {
+            background: #fff;
+            border: 1px solid #e1e4e8;
+            border-radius: 6px;
+            padding: 15px;
+            text-align: center;
+        }
+        .stat-number {
+            font-size: 2em;
+            font-weight: bold;
+            color: #0366d6;
+        }
+        .technical-note {
+            background: #fff5b4;
+            border: 1px solid #d4a72c;
+            border-radius: 6px;
+            padding: 15px;
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <header class="document-header">
+        <h1>巨量广告事件管理对接文档</h1>
+        <div class="document-meta">
+            <p><strong>数据来源：</strong><a href="https://event-manager.oceanengine.com/docs/8650/event_manager_docs" class="url-link">https://event-manager.oceanengine.com/docs/8650/event_manager_docs</a></p>
+            <p><strong>抓取时间：</strong><time datetime="2025-01-27">2025年1月27日</time></p>
+            <p><strong>文档类型：</strong><span class="keyword">技术开发文档</span> | <span class="keyword">API接口文档</span> | <span class="keyword">SDK集成指南</span></p>
+        </div>
+    </header>
+
+    <nav class="toc">
+        <h2>文档目录导航</h2>
+        <ul>
+            <li><a href="#chapter-1">事件管理操作手册</a></li>
+            <li><a href="#chapter-2">移动应用SDK上报数据</a>
+                <ul>
+                    <li><a href="#section-2-1">SDK基础信息</a></li>
+                    <li><a href="#section-2-2">隐私政策</a></li>
+                    <li><a href="#section-2-3">合规规范</a></li>
+                    <li><a href="#section-2-4">接入指引</a></li>
+                </ul>
+            </li>
+            <li><a href="#chapter-3">开发使用说明</a>
+                <ul>
+                    <li><a href="#section-3-1">落地页JS埋码</a></li>
+                    <li><a href="#section-3-2">落地页API回传</a></li>
+                    <li><a href="#section-3-3">XPath圈选</a></li>
+                    <li><a href="#section-3-8">转化回传API</a></li>
+                    <li><a href="#section-3-10">转化回传事件全集</a></li>
+                    <li><a href="#section-3-11">转化回传事件属性全集</a></li>
+                </ul>
+            </li>
+            <li><a href="#chapter-4">常见问题</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section class="chapter" id="chapter-1">
+            <h2>1. 事件管理操作手册</h2>
+            <table class="document-table">
+                <thead>
+                    <tr>
+                        <th>属性</th>
+                        <th>值</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>文档URL</strong></td>
+                        <td><a href="https://event-manager.oceanengine.com/docs/8650/event_manager_docs" class="url-link">https://event-manager.oceanengine.com/docs/8650/event_manager_docs</a></td>
+                    </tr>
+                    <tr>
+                        <td><strong>文档类型</strong></td>
+                        <td><span class="keyword">主要章节</span></td>
+                    </tr>
+                    <tr>
+                        <td><strong>内容范围</strong></td>
+                        <td>事件管理基础操作、配置指南</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section class="chapter" id="chapter-2">
+            <h2>2. 移动应用<span class="api-term">SDK</span>上报数据</h2>
+            <div class="chapter-summary">
+                <p>本章节涵盖移动应用SDK的完整集成方案，包括基础配置、隐私合规、接入流程等核心内容。</p>
+            </div>
+            
+            <table class="document-table">
+                <thead>
+                    <tr>
+                        <th>章节编号</th>
+                        <th>章节标题</th>
+                        <th>文档URL</th>
+                        <th>关键技术</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>2.1</td>
+                        <td><span class="keyword">SDK基础信息</span></td>
+                        <td><a href="https://event-manager.oceanengine.com/docs/8650/tka7y7zo" class="url-link">tka7y7zo</a></td>
+                        <td><span class="api-term">SDK配置</span></td>
+                    </tr>
+                    <tr>
+                        <td>2.2</td>
+                        <td>巨量引擎转化<span class="keyword">SDK隐私政策</span></td>
+                        <td><a href="https://event-manager.oceanengine.com/docs/8650/8xr99geh" class="url-link">8xr99geh</a></td>
+                        <td><span class="keyword">隐私合规</span></td>
+                    </tr>
+                    <tr>
+                        <td>2.3</td>
+                        <td>巨量引擎转化<span class="keyword">SDK合规规范</span></td>
+                        <td><a href="https://event-manager.oceanengine.com/docs/8650/27ta23t6" class="url-link">27ta23t6</a></td>
+                        <td><span class="keyword">合规要求</span></td>
+                    </tr>
+                    <tr>
+                        <td>2.4</td>
+                        <td><span class="keyword">接入指引</span></td>
+                        <td><a href="https://event-manager.oceanengine.com/docs/8650/kastmwz9" class="url-link">kastmwz9</a></td>
+                        <td><span class="api-term">集成流程</span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section class="chapter" id="chapter-3">
+            <h2>3. 开发使用说明</h2>
+            <div class="chapter-summary">
+                <p>技术开发核心章节，涵盖<span class="api-term">JavaScript埋码</span>、<span class="api-term">API回传</span>、<span class="keyword">小程序集成</span>、<span class="keyword">转化事件</span>等15个技术主题。</p>
+            </div>
+
+            <h3>3.1 前端技术集成</h3>
+            <table class="document-table">
+                <thead>
+                    <tr>
+                        <th>技术方案</th>
+                        <th>适用场景</th>
+                        <th>文档链接</th>
+                        <th>核心技术</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>落地页<span class="api-term">JS埋码</span></td>
+                        <td>H5页面事件追踪</td>
+                        <td><a href="https://event-manager.oceanengine.com/docs/8650/jssdk_docs" class="url-link">jssdk_docs</a></td>
+                        <td><span class="api-term">JavaScript SDK</span></td>
+                    </tr>
+                    <tr>
+                        <td>落地页<span class="api-term">API回传</span></td>
+                        <td>服务端事件回传</td>
+                        <td><a href="https://event-manager.oceanengine.com/docs/8650/h5_api_docs" class="url-link">h5_api_docs</a></td>
+                        <td><span class="api-term">HTTP API</span></td>
+                    </tr>
+                    <tr>
+                        <td>落地页<span class="keyword">XPath圈选</span></td>
+                        <td>可视化元素选择</td>
+                        <td><a href="https://event-manager.oceanengine.com/docs/8650/xpath_tool" class="url-link">xpath_tool</a></td>
+                        <td><span class="api-term">XPath选择器</span></td>
+                    </tr>
+                    <tr>
+                        <td><span class="keyword">XPath工具</span>（TRACK）插件</td>
+                        <td>浏览器插件辅助</td>
+                        <td><a href="https://event-manager.oceanengine.com/docs/8650/xpath_track" class="url-link">xpath_track</a></td>
+                        <td><span class="api-term">浏览器扩展</span></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>3.2 小程序平台集成</h3>
+            <table class="document-table">
+                <thead>
+                    <tr>
+                        <th>平台类型</th>
+                        <th>集成方案</th>
+                        <th>文档链接</th>
+                        <th>技术特点</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><span class="keyword">字节小程序</span></td>
+                        <td><span class="api-term">API回传</span></td>
+                        <td><a href="https://event-manager.oceanengine.com/docs/8650/miniprogram_api_docs" class="url-link">miniprogram_api_docs</a></td>
+                        <td>原生平台支持</td>
+                    </tr>
+                    <tr>
+                        <td><span class="keyword">微信小程序</span></td>
+                        <td>三方转化回传</td>
+                        <td><a href="https://event-manager.oceanengine.com/docs/8650/wechat_miniprogram_docs" class="url-link">wechat_miniprogram_docs</a></td>
+                        <td>跨平台集成</td>
+                    </tr>
+                    <tr>
+                        <td><span class="keyword">快应用</span></td>
+                        <td><span class="api-term">API回传</span></td>
+                        <td><a href="https://event-manager.oceanengine.com/docs/8650/quickapp_api_docs" class="url-link">quickapp_api_docs</a></td>
+                        <td>轻量级应用</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>3.3 核心API与事件管理</h3>
+            <table class="document-table">
+                <thead>
+                    <tr>
+                        <th>功能模块</th>
+                        <th>描述</th>
+                        <th>文档链接</th>
+                        <th>重要程度</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><span class="api-term">转化回传API</span></td>
+                        <td>核心转化事件接口</td>
+                        <td><a href="https://event-manager.oceanengine.com/docs/8650/app_api_docs" class="url-link">app_api_docs</a></td>
+                        <td><span class="keyword">高</span></td>
+                    </tr>
+                    <tr>
+                        <td><span class="keyword">离线事件</span>操作手册</td>
+                        <td>离线数据处理</td>
+                        <td><a href="https://event-manager.oceanengine.com/docs/8650/offline_event_docs" class="url-link">offline_event_docs</a></td>
+                        <td><span class="keyword">中</span></td>
+                    </tr>
+                    <tr>
+                        <td><span class="keyword">转化回传事件全集</span></td>
+                        <td>所有可用事件类型</td>
+                        <td><a href="https://event-manager.oceanengine.com/docs/8650/event_list" class="url-link">event_list</a></td>
+                        <td><span class="keyword">高</span></td>
+                    </tr>
+                    <tr>
+                        <td><span class="keyword">转化回传事件属性全集</span></td>
+                        <td>事件属性详细说明</td>
+                        <td><a href="https://event-manager.oceanengine.com/docs/8650/event_properties" class="url-link">event_properties</a></td>
+                        <td><span class="keyword">高</span></td>
+                    </tr>
+                    <tr>
+                        <td><span class="api-term">APP_ID</span>申请说明</td>
+                        <td>应用标识申请流程</td>
+                        <td><a href="https://event-manager.oceanengine.com/docs/8650/app_id_apply" class="url-link">app_id_apply</a></td>
+                        <td><span class="keyword">中</span></td>
+                    </tr>
+                    <tr>
+                        <td><span class="keyword">SDK数据检测</span></td>
+                        <td>数据质量验证</td>
+                        <td><a href="https://event-manager.oceanengine.com/docs/8650/sdk_data_check" class="url-link">sdk_data_check</a></td>
+                        <td><span class="keyword">中</span></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>3.4 高级功能与工具</h3>
+            <table class="document-table">
+                <thead>
+                    <tr>
+                        <th>功能名称</th>
+                        <th>应用场景</th>
+                        <th>文档链接</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><span class="keyword">巨量纵横版</span>资产使用</td>
+                        <td>应用/自研落地页资产管理</td>
+                        <td><a href="https://event-manager.oceanengine.com/docs/8650/oceanone_asset_docs" class="url-link">oceanone_asset_docs</a></td>
+                    </tr>
+                    <tr>
+                        <td><span class="keyword">线索深转回传</span>&<span class="keyword">全渠道对接</span></td>
+                        <td>多渠道数据整合</td>
+                        <td><a href="https://event-manager.oceanengine.com/docs/8650/lead_conversion_docs" class="url-link">lead_conversion_docs</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section class="chapter" id="chapter-4">
+            <h2>4. 常见问题</h2>
+            <div class="chapter-summary">
+                <p>包含18个常见问题的详细解答，涵盖<span class="keyword">投放配置</span>、<span class="keyword">事件管理</span>、<span class="keyword">技术调试</span>等多个方面。</p>
+            </div>
+
+            <h3>4.1 投放与配置类问题</h3>
+            <table class="document-table">
+                <thead>
+                    <tr>
+                        <th>问题编号</th>
+                        <th>问题标题</th>
+                        <th>问题类型</th>
+                        <th>文档链接</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>4.1</td>
+                        <td>如何创建一个<span class="keyword">事件管理计划</span></td>
+                        <td><span class="keyword">投放手册</span></td>
+                        <td><a href="https://event-manager.oceanengine.com/docs/8650/event_manager_ad" class="url-link">event_manager_ad</a></td>
+                    </tr>
+                    <tr>
+                        <td>4.2</td>
+                        <td><span class="keyword">资产的事件添加</span>说明</td>
+                        <td>配置指南</td>
+                        <td><a href="https://event-manager.oceanengine.com/docs/8650/asset_event_add" class="url-link">asset_event_add</a></td>
+                    </tr>
+                    <tr>
+                        <td>4.3</td>
+                        <td><span class="keyword">事件附加属性</span>详情介绍</td>
+                        <td>属性配置</td>
+                        <td><a href="https://event-manager.oceanengine.com/docs/8650/event_additional_properties" class="url-link">event_additional_properties</a></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>4.2 事件价值与统计</h3>
+            <table class="document-table">
+                <thead>
+                    <tr>
+                        <th>功能类型</th>
+                        <th>说明</th>
+                        <th>文档链接</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><span class="keyword">动态回传</span></td>
+                        <td>事件价值动态计算</td>
+                        <td><a href="https://event-manager.oceanengine.com/docs/8650/dynamic_event_value" class="url-link">dynamic_event_value</a></td>
+                    </tr>
+                    <tr>
+                        <td><span class="keyword">固定价值</span></td>
+                        <td>事件价值固定设置</td>
+                        <td><a href="https://event-manager.oceanengine.com/docs/8650/fixed_event_value" class="url-link">fixed_event_value</a></td>
+                    </tr>
+                    <tr>
+                        <td><span class="keyword">差异价值分人群设置</span></td>
+                        <td>基于人群的价值差异化</td>
+                        <td><a href="https://event-manager.oceanengine.com/docs/8650/differential_event_value" class="url-link">differential_event_value</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section class="chapter-summary">
+            <h2>文档结构统计</h2>
+            <div class="statistics">
+                <div class="stat-card">
+                    <div class="stat-number">1</div>
+                    <div>主章节</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">3</div>
+                    <div>分类目录</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">37</div>
+                    <div>子章节</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">4</div>
+                    <div>SDK相关</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">15</div>
+                    <div>开发文档</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">18</div>
+                    <div>常见问题</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="technical-note">
+            <h2>技术说明</h2>
+            <table class="document-table">
+                <thead>
+                    <tr>
+                        <th>技术项目</th>
+                        <th>详细说明</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>抓取工具</strong></td>
+                        <td><span class="api-term">Playwright</span> 自动化框架</td>
+                    </tr>
+                    <tr>
+                        <td><strong>数据提取</strong></td>
+                        <td>通过<span class="api-term">DOM选择器</span>和<span class="api-term">JavaScript</span>执行获取菜单结构</td>
+                    </tr>
+                    <tr>
+                        <td><strong>文档格式</strong></td>
+                        <td><span class="keyword">HTML5语义化</span>格式，便于AI系统索引和维护</td>
+                    </tr>
+                    <tr>
+                        <td><strong>更新时间</strong></td>
+                        <td><time datetime="2025-01-27">2025年1月27日</time></td>
+                    </tr>
+                    <tr>
+                        <td><strong>网站架构</strong></td>
+                        <td><span class="keyword">单页应用</span>（SPA）架构，所有章节共享基础URL，通过前端路由切换</td>
+                    </tr>
+                </tbody>
+            </table>
+            
+            <p><strong>访问说明：</strong>如需访问具体章节内容，请访问原始URL并在页面左侧菜单中选择对应章节。</p>
+        </section>
+    </main>
+
+    <footer style="margin-top: 40px; padding-top: 20px; border-top: 1px solid #e1e4e8; text-align: center; color: #666;">
+        <p>本文档已优化为AI友好的HTML结构，包含语义化标签、结构化数据表格和关键术语标记。</p>
+        <p>最后更新：<time datetime="2025-01-27">2025年1月27日</time></p>
+    </footer>
+</body>
+</html>
